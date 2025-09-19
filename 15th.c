@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int arr[5] = {1, 2, -3 ,4, -5};
-    int maxsum=0;
+    int arr[5] = {-1, -2, -3 , -4, -5};
+    int maxsum = arr[0];
 
     int cursum = 0;
     for (int i = 0; i < 5; i++) {
@@ -14,7 +14,7 @@ int main() {
             cursum = 0;
         }
     }
-    printf("%d", maxsum);
+    printf("%d\n", maxsum);
 
     return 0;
 }
